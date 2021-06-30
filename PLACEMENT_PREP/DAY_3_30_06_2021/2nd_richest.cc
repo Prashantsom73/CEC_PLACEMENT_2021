@@ -14,6 +14,7 @@ int main(){
              sum=sum+vec[i][j];
         }
              v.push_back(sum);
+
     }
     cout<<*max_element(v.begin(),v.end());
 }
