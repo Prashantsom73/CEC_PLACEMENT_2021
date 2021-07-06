@@ -49,11 +49,11 @@ vector<int> Doctor_patients(vector<vector<int>>& arr,int k){
 }
 
 int main(){
-    vector<vector<int>> v={{1,0,0,0},
- {1,1,1,1},
- {1,0,0,0},
- {1,0,0,0}} ;
-    //  vector<vector<int>> v={{1,1,1,0},{1,1,0,0},{1,1,0,0},{1,1,1,0}};
+//     vector<vector<int>> v={{1,0,0,0},
+//  {1,1,1,1},
+//  {1,0,0,0},
+//  {1,0,0,0}} ;
+     vector<vector<int>> v={{1,1,1,0},{1,1,0,0},{1,1,0,0},{1,1,1,0}};
     Doctor_patients(v,4 );
     
 }
