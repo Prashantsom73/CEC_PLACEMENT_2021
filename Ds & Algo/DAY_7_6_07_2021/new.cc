@@ -8,6 +8,7 @@ vector<vector<int>> transpose(vector<vector<int>>& nums) {
         int min=*min_element(nums[i].begin(),nums[i].end());
 		for (int j = 0; j < nums[0].size(); j++) {
             int max=*max_element(nums[j].begin(),nums[j].end());
+            // cout<<max;
             if(min>max){
                 m=min;
             }
