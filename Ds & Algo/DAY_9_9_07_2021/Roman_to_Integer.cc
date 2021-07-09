@@ -14,18 +14,19 @@ int find(char a){
     return 0;
 }
 int romanToInt(string s) {
-    int sum=0;
-    for(int i=0;i<s.size();i++){
+    int sum=0,i=0;
+    while(i<s.size())
+        {
         if(find(s[i])<find(s[i+1])){
             sum+=find(s[i+1])-find(s[i]);
-            i++;
+            i+=2;
         }else{
             sum+=find(s[i]);
-           
+            i++;
         }
     }  
     return sum;
 }
 int main(){
-    isValid("MCMXCIV");
+    cout<<romanToInt("MCMXCIV");
 }
