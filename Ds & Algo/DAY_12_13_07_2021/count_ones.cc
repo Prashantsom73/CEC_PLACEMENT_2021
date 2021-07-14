@@ -1,15 +1,23 @@
 #include<iostream>
 using namespace std;
-void countone(int n){
-    int mask=1,c=0;
-    while(n!=0){
-        if(mask!=n){
-            c++;
-            n=mask<<1;
-        }
+// int countone(int n){
+//         int count = 0;
+//         while (n > 0)   
+//         {
+//             if (n % 2 == 1) // also can be written as, if (n & 1)
+//                 count++;
+//             n /= 2;
+//         }  
+//         return count;
+//     }
+int countone(int n){
+  int c= 0;
+    while (n != 0) {
+        c++;
+        n &= (n - 1);
     }
-    cout<<c;
+    return c;
 }
 int main(){
-    countone(9);
+    cout<<countone(9);
 }
