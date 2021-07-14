@@ -1,0 +1,2 @@
+   // cout<<first<<"  ";
+    // cout<<second;
