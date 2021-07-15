@@ -1,2 +1,2 @@
- n=n>>1;
-    cout<<n;   
+  cout<<first<<endl;
+    cout<<second;
