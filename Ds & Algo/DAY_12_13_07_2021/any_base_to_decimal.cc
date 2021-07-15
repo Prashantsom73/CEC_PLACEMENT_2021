@@ -25,5 +25,5 @@ void any_base_to_decimal(double n,int base){
 
 }
 int main(){
-    any_base_to_decimal(1101.01,2);
+    any_base_to_decimal(1101,16);
 }
